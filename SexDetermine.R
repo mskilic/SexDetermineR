@@ -135,11 +135,16 @@ if (Samtools_Location != "samtools") {
   }
 }
 
-if (intersectBed_Location != "intersectBed") {
-  if (!file.exists(intersectBed_Location)) {
+
+if (!file.exists(intersectBed_Location)) {
+  if (intersectBed_Location != "intersectBed") {
     stop("intersectBed executable does not exist at the specified path.")
+  } else {
+    stop("intersectBed executable is not accessible from your system's PATH. Please specify the full path to the bedtools intersectBed executable using -intersectBed option.")
   }
+  
 }
+
 
 
 if (InputFileType == "-idx" && file.exists(IDX_Location)){
