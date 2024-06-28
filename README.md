@@ -46,4 +46,8 @@ Ensure that the required BED files are present in the same directory as the SexD
 ## Citation
 Please cite this paper when using SexDetermine.R for your publications.
 
+> Female Lineages and Changing Kinship Patterns in Neolithic Çatalhöyük </br>
+> Yüncü, E., Doğu, A. K., Kaptan, D., Kılıç, M. S., Mazzucato, C., Güler, M. N., Eker, E., Katırcıoğlu, B., Chyleński, M., Vural, K. B., Sevkar, A., Atağ, G., Altınışık, N. E., Baloğlu, F. K., Bozkurt, D., Pearson, J., Milella, M., Karamurat, C., Aktürk, Ş., Sağlıcan, E., Yıldız, N., Koptekin, D., Yorulmaz, S., Kazancı, D. D., Aydoğan, A., Karabulut, N. B., Gürün, K., Schotsmans, E. M. J., Anvari, J., Rosenstock, E., Byrnes, J., Biehl, P. F., Orton, D., Lagerholm, V. K., Gemici, H. C., Vasic, M., Marciniak, A., Atakuman, Ç., Erdal, Y. S., Kırdök, E., Pilloud, M., Larsen, C. S., Haddow, S. D., Götherström, A., Knüsel, C. J., Özer, F., Hodder, I., Somel, M. </br>
+> https://doi.org/10.1101/2024.06.23.600259
+
 
