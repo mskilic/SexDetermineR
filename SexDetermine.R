@@ -129,14 +129,21 @@ if (InputFileType == "-bam") {
   stop("Unsupported file type specified. Use '-bam' or '-idx'.")
 }
 
-if (Samtools_Location != "samtools") {
-  if (!file.exists(Samtools_Location)) {
-    stop("Samtools executable does not exist at the specified path.")
+CheckSamtools <- Sys.which(Samtools_Location)
+
+if (CheckSamtools == "") {
+  if (Samtools_Location != "samtools") {
+    stop("samtools executable does not exist at the specified path.")
+  } else {
+    stop("samtools executable is not accessible from your system's PATH. Please specify the full path to the Samtools executable using -samtools option.")
   }
+  
 }
 
 
-if (!file.exists(intersectBed_Location)) {
+CheckIntersectBed <- Sys.which(intersectBed_Location)
+
+if (CheckIntersectBed == "") {
   if (intersectBed_Location != "intersectBed") {
     stop("intersectBed executable does not exist at the specified path.")
   } else {
@@ -144,7 +151,6 @@ if (!file.exists(intersectBed_Location)) {
   }
   
 }
-
 
 
 if (InputFileType == "-idx" && file.exists(IDX_Location)){
